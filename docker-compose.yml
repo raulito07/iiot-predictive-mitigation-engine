@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  # El motor de analítica y filtrado de KORI
+  predictive-engine:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: iiot_predictive_engine
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+      - SITE_NAME=MALAGA_LOGISTICS_CENTER
+      - BASELINE_MIN_SAMPLES=10
+    depends_on:
+      - timeseries-db
+
+  # Base de datos simulada para la persistencia de métricas y Órdenes de Trabajo
+  timeseries-db:
+    image: postgres:15-alpine
+    container_name: iiot_timeseries_db
+    environment:
+      - POSTGRES_USER=iiot_admin
+      - POSTGRES_PASSWORD=iiot_secure_pass
+      - POSTGRES_DB=predictive_maintenance
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
