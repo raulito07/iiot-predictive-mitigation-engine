@@ -2,7 +2,7 @@
 
 An enterprise-grade **Predictive Maintenance Analytics Engine** built in Python. This system processes asynchronous triaxial vibration, high-frequency acceleration bands, and radiometric thermal telemetry streams coming from heavy machinery deployments (conveyors, industrial drives, and powertrains). 
 
-By executing multi-sensor cross-correlation, automated spatial tracking, and adaptive statistical variance filters, the engine successfully reduces **over 53% of industrial false alarms**, triggering high-fidelity automated Work Orders mapped against real-time **RPN (Risk Priority Number)** matrices.
+By executing multi-sensor cross-correlation, automated spatial tracking, and adaptive statistical variance filters, the engine successfully reduces **over 50% of industrial false alarms**, triggering high-fidelity automated Work Orders mapped against real-time **RPN (Risk Priority Number)** matrices.
 
 ## 🚀 Key Architectural Breakthroughs
 
