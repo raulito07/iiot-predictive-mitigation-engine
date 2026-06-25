@@ -1,3 +1,4 @@
+https://www.linkedin.com/in/raul-ruano-gil
 # Industrial IoT Predictive Mitigation & Cross-Correlation Engine (IIoT-PME)
 
 An enterprise-grade **Predictive Maintenance Analytics Engine** built in Python. This system processes asynchronous triaxial vibration, high-frequency acceleration bands, and radiometric thermal telemetry streams coming from heavy machinery deployments (conveyors, industrial drives, and powertrains). 
